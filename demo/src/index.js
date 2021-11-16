@@ -6,14 +6,12 @@ import Example from '../../src'
 class Demo extends Component {
   render() {
     return <div>
-      <h1>mdViewer Demo</h1>
+      <h1>Alert Demo</h1>
       <Example
         org='warelab'
         repo='release-notes'
-        path='sorghum'
-        heading='Release Notes'
-        ifEmpty='A user guide is in development'
-        date='2021-11-18'
+        path='alerts'
+        site='grapevine'
       />
     </div>
   }

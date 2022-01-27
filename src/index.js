@@ -16,7 +16,7 @@ export default class extends Component {
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        const alerts = data.filter(f => f.name === `${this.props.site}.md`);
+        const alerts = data.filter(f => f.name === `${this.props.site}.md` || f.name === "APB.md");
         if (alerts.length === 1) {
           fetch(alerts[0].download_url)
             .then(response => response.text())
